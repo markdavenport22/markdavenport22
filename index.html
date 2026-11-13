@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logo</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b0f17 url("background.jpg") center / cover no-repeat;
+      overflow: hidden;
+    }
+
+    /* Window onto the GIF: 1/5 of the viewport height, with the
+       aspect ratio of the left 555px of the 3161 x 1080 source. */
+    .logo {
+      height: 20vh;
+      height: 20dvh;
+      aspect-ratio: 555 / 1080;
+      overflow: hidden;
+    }
+
+    /* The full animated GIF, scaled to the window's height and
+       anchored left, so only its left 555px show. */
+    .logo img {
+      display: block;
+      height: 100%;
+      width: auto;
+      max-width: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="logo.gif" alt="Logo">
+  </div>
+</body>
+</html>
